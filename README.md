@@ -1,6 +1,6 @@
 # p-Center – wie weit ist der Weiteste noch weg? – Streamlit-Demo
 
-*(noch nicht deployed)*
+**[→ Demo live ausprobieren](https://sebastianhanisch-p-center-demo.streamlit.app/)**
 
 Drittes Stück der **Standortplanungs-Linie** der "Konzepte"-Reihe für die Website "Sebastian Hanisch – Operations Research und Machine Learning", Kind von [standortplanung-demo](https://github.com/sebastian-hanisch/standortplanung-demo) (Standortproblem ohne Kapazität):
 anders als die Fall-Demos im Portfolio (ein Anwendungsfall, mehrere Verfahren im Vergleich) zeigt diese Demo **ein** Modell – das **p-Center-Problem (Minimax-Standortplanung)** – an einem wachsenden Beispiel.
