@@ -91,7 +91,7 @@ wie die **Swap-Lokalsuche** nachbessert und was der **Preis der Fairness** gegen
 )
 st.caption(
     "Anders als die Fall-Demos im Portfolio, die an einem Anwendungsfall mehrere Verfahren vergleichen, zeigt diese Demo - ein Stück der Standortplanungs-Linie der \"Konzepte\"-Reihe - **ein** Modell an einem wachsenden Beispiel. "
-    "Verwandt: das Standortproblem ohne Kapazität (Summe statt Maximum), die k-Means-Demo (p-Median ist dort nur k-Medoids) und die Rettungsdienst-Demo (Überdeckung mit Verfügbarkeit)."
+    "Verwandt: das Standortproblem ohne Kapazität (Summe statt Maximum), die k-Means-Demo (Depotwahl mit dem Mittelwert; k-Medoids wird dort nur erklärt) und die Rettungsdienst-Demo (Überdeckung mit Verfügbarkeit)."
 )
 
 with st.expander("So funktioniert das p-Center-Problem", expanded=True):
