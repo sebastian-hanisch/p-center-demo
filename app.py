@@ -325,7 +325,7 @@ st.markdown(
 | **Erzeugte Netze** | Gleichverteilte oder geclusterte Punkte, keine Fremddaten; die Lehrnetze sind Konstruktionen. |
 """
 )
-st.caption("Die Standortplanungs-Linie ist als Ganzes geplant: das Standortproblem ohne Kapazität als Wurzel, danach die kapazitierte Standortplanung mit Lagrange-Relaxation, dieses Stück (Maximum statt Summe), Hub-Standorte, Wettbewerbsstandort und Standort mit Bestand.")
+st.caption("Die Standortplanungs-Linie ist damit vollständig: das Standortproblem ohne Kapazität als Wurzel, kapazitierte Standortplanung mit Lagrange-Relaxation, dieses Stück (Maximum statt Summe), Standort mit Bestand, Wettbewerbsstandort und Hub-Standorte.")
 
 st.markdown("---")
 

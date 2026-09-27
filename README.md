@@ -12,9 +12,9 @@ Das genaue Optimum ist leicht zu berechnen (Binärsuche über den Radius mit ein
 standortplanung-demo (UFL, Wurzel: Summe der Kosten)                                    [gebaut]
   ├─ kapazitierte-standortplanung-demo (Kapazität + Single-Sourcing, Lagrange)           [gebaut]
   ├─ p-center-demo (Maximum statt Summe: Farthest-first, exakt per Überdeckung)          [dieses Stück]
-  ├─ p-Hub-Median                                                                        [geplant]
-  ├─ Wettbewerbsstandort                                                                 [geplant]
-  └─ Standort + Bestand (Risk Pooling)                                                   [geplant]
+  ├─ standort-bestand-demo (Bestandskosten je Lager, Risk Pooling)                       [gebaut]
+  ├─ wettbewerbsstandort-demo (Führer und Folger, (r|p)-Centroid)                        [gebaut]
+  └─ p-hub-median-demo (Hub-Standorte mit Rabatt, Single Allocation)                     [gebaut]
 ```
 
 ## Ergebnis (Zahlen aus den Tests)
