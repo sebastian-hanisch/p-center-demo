@@ -84,7 +84,7 @@ st.title("🎯 p-Center – wie weit ist der Weiteste noch weg?")
 st.markdown(
     """
 Bisher war das Ziel der Standortwahl eine **Summe** (Fixkosten plus Wege). Beim **p-Center-Problem** zählt nur der **Weiteste**: von $n$ Punkten werden $p$ zu Mittelpunkten, jeder Punkt geht zum nächsten, und gesucht ist die Auswahl,
-bei der der **größte Abstand** möglichst klein ist („niemand ist weiter als $r$ entfernt“, wie bei Notdiensten oder Filialen mit Erreichbarkeitsgarantie). Das genaue Optimum ist hier leicht zu berechnen (Binärsuche über den Radius mit einer Überdeckungsrechnung);
+bei der der **größte Abstand** möglichst klein ist („niemand ist weiter als $r$ entfernt“, wie bei Notdiensten oder Filialen mit Erreichbarkeitsgarantie). Das genaue Optimum ist in dieser Demo-Größe schnell zu berechnen (Binärsuche über den Radius mit einer Überdeckungsrechnung mit einem MILP; allgemein ist p-Center NP-schwer, bei großen Netzen wird das exakte Rechnen aufwendig);
 das klassische einfache Verfahren, **Farthest-first** (Gonzalez), hat eine **Garantie**: nie mehr als das Doppelte des Optimums. Die Demo zeigt, was von dieser Garantie in der Praxis übrig bleibt, wie stark der **Startpunkt** wirkt,
 wie die **Swap-Lokalsuche** nachbessert und was der **Preis der Fairness** gegenüber der Summen-Lösung (p-Median) ist.
 """
