@@ -72,7 +72,7 @@ Die Einheit „bewertete Tausche“ ist eine Zählung, keine Uhr.
 | `pc_circle.py` | kleinster umschließender Kreis (p = 1, Mittelpunkt frei) |
 | `pc_evaluation.py`, `pc_visualization.py` | Vergleiche, Reihen, Verteilungen, Ausreißer- und Kreis-Test; Karte, Radiusverlauf, Balken |
 | `pc_presets.py`, `pc_constants.py` | Presets, Permalink, Regler-Grenzen, feste Seeds |
-| `tests/` | 297 Tests: Szenario, Algorithmen (Garantie 2 über alle Startpunkte), Exakt gegen Brute Force, Kreis, Presets, Zahlen (`test_claims.py`), App |
+| `tests/` | 317 Tests: Szenario, Algorithmen (Garantie 2 über alle Startpunkte), Exakt gegen Brute Force, Kreis, Presets, Zahlen (`test_claims.py`), App |
 
 Lokal starten: `pip install -r requirements.txt`, dann `streamlit run app.py`; Tests: `pip install -r requirements-dev.txt`, dann `python -m pytest tests`.
 
