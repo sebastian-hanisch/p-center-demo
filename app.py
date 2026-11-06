@@ -89,6 +89,17 @@ das klassische einfache Verfahren, **Farthest-first** (Gonzalez), hat eine **Gar
 wie die **Swap-Lokalsuche** nachbessert und was der **Preis der Fairness** gegenüber der Summen-Lösung (p-Median) ist.
 """
 )
+
+# erklaerseite:einfach:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/p-center-erklaert.json, nicht von Hand ändern)
+with st.expander("💬 In einfachen Worten"):
+    st.markdown(
+        """
+Ein Landkreis will Rettungswachen so aufstellen, dass niemand zu weit von der nächsten Wache entfernt wohnt. Bewertet wird nur das Dorf, das am weitesten von seiner Wache entfernt liegt, nicht die Summe aller Wege. Eine einfache Regel setzt die nächste Wache immer in das Dorf mit der längsten Anfahrt und hat dafür ein Versprechen: Sie wird nie mehr als doppelt so schlecht wie das Beste. Die Demo zeigt, wie viel von diesem Versprechen in der Praxis übrig bleibt, wie stark der erste Standort das Ergebnis lenkt, was das Tauschen von Wachen bringt und was der Schutz des Weitesten an Gesamtstrecke kostet.
+
+[Ausführlich und verständlich erklärt, mit Fachteil](https://sebastianhanisch.net/p-center-erklaert.html)
+        """
+    )
+# erklaerseite:einfach:end
 st.caption(
     "Anders als die Fall-Demos im Portfolio, die an einem Anwendungsfall mehrere Verfahren vergleichen, zeigt diese Demo - ein Stück der Standortplanungs-Linie der \"Konzepte\"-Reihe - **ein** Modell an einem wachsenden Beispiel. "
     "Verwandt: das Standortproblem ohne Kapazität (Summe statt Maximum), die k-Means-Demo (Depotwahl; das Zentrum ist dort zwischen Mittelwert und Medoid umschaltbar) und die Rettungsdienst-Demo (Überdeckung mit Verfügbarkeit)."
@@ -330,6 +341,23 @@ st.caption("Die Standortplanungs-Linie ist damit vollständig: das Standortprobl
 st.markdown("---")
 
 with st.expander("📐 Mathematische Formulierung"):
+    # erklaerseite:lesehilfe:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/p-center-erklaert.json, nicht von Hand ändern)
+    st.markdown(
+        r"""
+**Lesehilfe.** Gegeben sind $n$ Punkte mit Abständen $d_{ij}$ und die Zahl $p$ der Mittelpunkte. Gesucht ist eine Auswahl $S$ von $p$ Punkten, bei der der größte Abstand eines Punkts zu seinem nächsten Mittelpunkt, der Radius $r(S)$, möglichst klein ist.
+
+| Symbol | Bedeutung |
+|---|---|
+| $V$, $n$ | Menge der Punkte (Orte), Zahl der Punkte |
+| $d_{ij}$ | Abstand zwischen den Punkten $i$ und $j$ |
+| $p$, $S$ | Zahl der Mittelpunkte, Auswahl der Mittelpunkte unter den Punkten |
+| $r(S)$, $r^*$ | Radius der Auswahl $S$ (größter Abstand eines Punkts zum nächsten Mittelpunkt), kleinster möglicher Radius |
+| $N_r(j)$, $k(r)$ | Punkte, die höchstens den Abstand $r$ von $j$ haben, und die kleinste Zahl von Mittelpunkten, die für den Radius $r$ nötig ist |
+
+[Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/p-center-erklaert.html#fachleute)
+        """
+    )
+    # erklaerseite:lesehilfe:end
     st.markdown(
         r"""
 **Modell.** Punkte $V$, $|V|=n$, Abstände $d_{ij}$. Für $S\subseteq V$ mit $|S|=p$ ist der Radius $r(S)=\max_{j\in V}\min_{i\in S}d_{ij}$; gesucht $r^*=\min_Sr(S)$.
